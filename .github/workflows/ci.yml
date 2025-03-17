@@ -25,3 +25,10 @@ jobs:
       - name: Run tests
         run: |
           # Command to run tests, e.g., python -m unittest discover -s tests
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@master
+        env:
+          SONAR_HOST_URL: "https://sonarqube.cloud"
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_ORGANIZATION: "your-organization-key"
+          SONAR_PROJECT_KEY: "your-project-key"
