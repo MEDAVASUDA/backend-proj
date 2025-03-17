@@ -30,5 +30,5 @@ jobs:
         env:
           SONAR_HOST_URL: "https://sonarqube.cloud"
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_ORGANIZATION: "your-organization-key"
-          SONAR_PROJECT_KEY: "your-project-key"
+          SONAR_ORGANIZATION: "medavasuda"
+          SONAR_PROJECT_KEY: "MEDAVASUDA_backend-proj"
